@@ -30,9 +30,11 @@ html, body {
 }
 .font-helerohe2{
     color:#b0e9e1;
+	font-weight: bold;
 }
 .font-helesinine{
     color:#BAEDFC;
+	font-weight: bold;
 }
 .alignright{
     text-align: right;
@@ -164,6 +166,7 @@ a {
     width: 50%;
     border-radius: 0 20px 20px 0; /* Apply rounded corners only on the right side */
     overflow: hidden;
+	padding: 20px;
 }
 
 #about .content-container {
@@ -174,49 +177,36 @@ a {
 .about-container .text{
     text-align:right;
 }
-.icons-container {
-    background-color: #1e1f21;
-    border-radius: 20px;
-    margin: auto;
-    max-width: 1100px;
-    padding: 50px;
-    overflow: auto;
+#icons .row {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center; 
+    padding: 10px;
 }
-#icons .col-sm-4{
-    border:1px solid #fff;
+
+#icons .col-sm-4 {
+    flex: 0 0 auto; 
+    margin: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center; 
 }
 
 #icons .card {
-    height: auto;
+	background-color: #1e1f21;
+	border-radius: 10px;
+    border: 1px solid #1e1f21; 
+    padding: 30px;
     display: flex;
-    padding: 5px;
-
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    box-sizing: border-box;
+	margin-right: 180px;
 }
-
-#icons .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin: -10px; /* Counteract the negative margin in the columns */
+#icons .card-text {
+	padding-left: 1em;
 }
-
-
-
-#sports {
-    background-color: #f4f4f4; /* Example background color */
-    padding: 20px;
-}
-
-#sports .container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-
-}
-#sports img{
-    width:800px;
-    height:auto;
-}
-
 .sportleft-container {
     width: auto;
     background-color: #1e1f21;
@@ -283,7 +273,74 @@ a {
     right:-80px;
     top:100px;
 }
+.buttons{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+.btn{
+    background-color: #1e1f21; /* Green */
+    border: none;
+    color: #DDF0BF;
+    padding: 15px 50px;
+    margin:20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 
+    font-size: 20px;
+    border-radius:15px;
+
+}
+.btn:hover,
+.btn:focus{
+    background-color:#92ce31;
+    color:#1e1f21;
+}
+
+.btn-2{
+    background-color:#1e1f21;
+    border:none;
+    color:#fff;
+    padding: 20px 45px;
+    margin:15px;
+    text-align: center;
+    text-decoration: none;
+    display:inline-block;
+    font-size:20px;
+    border-radius:15px;
+    position:relative;
+}
+
+.btn-2:hover, .btn-2:focus {
+    background-color:#92ce31;
+    color:#1e1f21;
+}
+.btn-2:hover .icon,
+.btn-2:focus .icon {
+    color: #1e1f21;
+}
+.btn-primary{
+    background-color:#92ce31;
+    color:#1e1f21;
+}
+
+.infotable{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.infotable img{
+    width:80%;
+    height:auto;
+
+}
+#venue  .contact-map{
+        flex:1;
+    }
+#map {
+    width:100%;
+}
 
 #schedule .container{
     justify-content: center;
@@ -369,3 +426,94 @@ footer {
 	background: #404040;
 	color: #ffff;
 }
+/* Existing Styles ... */
+
+/* Responsive Typography */
+@media (max-width: 768px) {
+    .m-heading {
+        font-size: 2rem;
+    }
+
+    .l-heading {
+        font-size: 2.5rem;
+    }
+
+    .xl-heading {
+        font-size: 3rem;
+    }
+
+    #marquee-text {
+        font-size: 3em;
+    }
+}
+
+/* Responsive Containers */
+@media (max-width: 768px) {
+    .container,
+    .about-container {
+        padding: 0 10px;
+    }
+
+    .background-container {
+        height: 80px;
+    }
+
+    #navibar {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/* Responsive Navigation */
+@media (max-width: 768px) {
+    #navibar ul {
+        float: none;
+    }
+
+    #navibar ul li {
+        float: none;
+    }
+
+    #navibar ul li a {
+        padding: 10px;
+    }
+}
+
+/* Responsive Flexbox Layout */
+@media (max-width: 768px) {
+    .sportleft-container,
+    .sportright-container {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    .logos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #icons .row {
+        flex-direction: column;
+    }
+
+    #icons .col-sm-4 {
+        margin: 10px 0;
+    }
+}
+
+/* Responsive Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Icon Cards */
+@media (max-width: 768px) {
+    #icons .card {
+        padding: 15px;
+        margin-right: 0;
+    }
+}
+
+/* Additional Media Queries as needed... */
+
