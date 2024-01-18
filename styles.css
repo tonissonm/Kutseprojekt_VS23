@@ -1,0 +1,328 @@
+/* nullib veebisite css*/
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html, body {
+	font-family: 'Montserrat', sans-serif;
+	line-height: 1.7em;
+	background-color: black;
+	color: #ffff;
+}
+.p-1{
+    padding:1rem;
+}
+.py-1{
+    padding:1rem 0;
+}
+.font-prim{
+    color:#92ce31;
+    font-weight: bold;
+}
+.font-prim2{
+    color:#50711b;
+    font-weight: bold;
+}
+.alignright{
+    text-align: right;
+}
+.alignleft{
+    text-align: left;
+}
+
+.m-heading{
+    font-size:2.5rem;
+
+}
+.l-heading{
+    margin-top:10px;
+    font-size:3.25rem;
+}
+.xl-heading{
+    font-size: 4.5rem;
+}
+.container {
+    margin: auto;
+    max-width: 1100px;
+    padding: 0 20px;
+    overflow: auto;
+}
+a {
+	color: #fff;
+	text-decoration: none;
+}
+#navibar {
+	background-color: #000000;
+	overflow: auto;
+	padding-left: 200px;
+	padding-right: 200px;
+}
+#navibar a{
+	color: #fff;
+	font-size: 1.4em;
+}
+#navibar ul{
+	float: right;
+	list-style: none;
+}
+#navibar ul li {
+	float: left;
+}
+#navibar ul li a{
+	display: block;
+	padding: 20px;
+	text-align: center;
+}
+#navibar ul li a:hover{ 
+	background: #2A0A12;
+	color: #DBA901;
+	border-radius: 100px;
+}
+#navibar h1 {
+	padding-top: 20px;
+}
+#showcase {
+	height: 100%;
+}
+#showcase .text-block{
+	text-align: center;
+	font-size: 1.7em;
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+}
+#showcase .text-block h1{
+	padding-bottom: 1em;
+	color: #92CE31;
+}
+#showcase .text-block {
+	padding-bottom: 2em;
+}
+#showcase img {
+	width: 80%;
+	height: auto;
+	display: block;
+}
+.background-container {
+    display: flex;
+    align-items: center; /* Vertical center alignment */
+    justify-content: flex-start; /* Horizontal alignment */
+    overflow: hidden;
+    white-space: nowrap;
+    box-sizing: border-box;
+    height: 110px; /* Adjusted height to fit larger text */
+    background-color: #92CE31;
+}
+
+#marquee-container {
+    width: 100%;
+}
+
+#marquee-text {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 20s linear infinite;
+    font-size: 6em; 
+}
+
+@keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+}
+
+#about p {
+    margin-bottom: 10px;
+}
+#about h1{
+    margin-bottom:25px;
+}
+.about-container {
+    background-color: #1e1f21;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 1100px;
+    padding: 50px;
+    overflow: auto;
+}
+
+#about .photo {
+    float:right;
+    height: auto;
+    width: 50%;
+    border-radius: 0 20px 20px 0; /* Apply rounded corners only on the right side */
+
+}
+
+#about .content-container {
+    padding: 20px;
+}
+
+#sports {
+    background-color: #f4f4f4; /* Example background color */
+    padding: 20px;
+}
+
+#sports .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+#sports img{
+    width:800px;
+    height:auto;
+}
+
+.sportleft-container {
+    width: auto;
+    background-color: #1e1f21;
+    border: 1px solid #ccc;
+    padding:20px 75px 20px 75px;
+    margin: 150px;
+    border-radius: 15px;
+    position:relative;
+}
+.sportright-container{
+    width: auto;
+    background-color: #1e1f21;
+    border: 1px solid #ccc;
+    padding:20px 75px 20px 450px;
+    margin: 150px;
+    border-radius: 15px;
+    position:relative;
+}
+.sportright-container h1,
+.sportleft-container h1{
+    padding:2rem;
+}
+.sportright-container p,.sportleft-container p{
+    padding:0.75rem;
+}
+.sportright-container ul li,
+.sportleft-container ul li{
+    color:#92ce31;
+    list-style-type:disc;
+}
+.sportright-container ul li span,
+.sportleft-container ul li span{
+    color:#ffffff;
+}
+
+.image-left{
+    width:50%;
+    position:absolute;
+    left:50px;
+    top:-35px;
+}
+.image-right{
+    width:50%;
+    position:absolute;
+    right:50px;
+    top:-40px;
+}
+
+.basketball-right{
+    width:25%;
+    position:absolute;
+    right:-125px;
+    top:-75px;
+}
+.volleyball-left{
+    width:25%;
+    position:absolute;
+    left:-125px;
+    top:-75px;
+}
+.tabletennis-right{
+    width:25%;
+    position:absolute;
+    right:-80px;
+    top:100px;
+}
+
+
+#schedule .container{
+    justify-content: center;
+}
+
+
+#sponsors {
+    color: #fff;
+    padding: 20px 0;
+}
+
+#sponsors h2 {
+    margin-bottom: 20px;
+    margin-left: 10em;
+
+}
+
+.organizer-section, .sponsor-section {
+    margin-bottom: 40px;
+}
+
+.logos {
+    border: 2px #fff;
+    border-radius: 10% ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.logos img {
+    max-width: 300px; /* Adjust according to your size requirements */
+    height: auto;
+    background-color: #fff; /* White background for the logos */
+    border: 2px solid #fff; /* White border around the logos */
+    border-radius: 10px; /* Rounded corners for the logos */
+    padding: 20px 30px 20px 30px; /* Space around the logos inside the border */
+}
+@media (max-width: 768px) {
+    .logos {
+        flex-direction: column;
+    }
+}
+
+.site-footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.footer-text, .footer-event {
+    color: #fff; 
+}
+
+.footer-text h3, .footer-event h4 {
+    color: white;
+}
+
+.footer-image img {
+    max-width: 400px; /
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+    }
+}
+footer {
+	padding: 20px;
+	background: #404040;
+	color: #ffff;
+}
