@@ -25,6 +25,15 @@ html, body {
     color:#50711b;
     font-weight: bold;
 }
+.font-helerohe{
+    color:#b4e7c7;
+}
+.font-helerohe2{
+    color:#b0e9e1;
+}
+.font-helesinine{
+    color:#BAEDFC;
+}
 .alignright{
     text-align: right;
 }
@@ -154,12 +163,43 @@ a {
     height: auto;
     width: 50%;
     border-radius: 0 20px 20px 0; /* Apply rounded corners only on the right side */
-
+    overflow: hidden;
 }
 
 #about .content-container {
     padding: 20px;
 }
+
+
+.about-container .text{
+    text-align:right;
+}
+.icons-container {
+    background-color: #1e1f21;
+    border-radius: 20px;
+    margin: auto;
+    max-width: 1100px;
+    padding: 50px;
+    overflow: auto;
+}
+#icons .col-sm-4{
+    border:1px solid #fff;
+}
+
+#icons .card {
+    height: auto;
+    display: flex;
+    padding: 5px;
+
+}
+
+#icons .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -10px; /* Counteract the negative margin in the columns */
+}
+
+
 
 #sports {
     background-color: #f4f4f4; /* Example background color */
@@ -247,6 +287,9 @@ a {
 
 #schedule .container{
     justify-content: center;
+}
+#schedule button{
+    
 }
 
 
